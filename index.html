@@ -1,230 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>THREE BILLIONAIRES CLUB</title>
+
+<nav class="tbc-menu">
+
+  <!-- Logo Image: Add your image here -->
+  <a href="index.html" class="tbc-logo">
+    <!-- <div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjAtohuesk8mraAI4OysY5B4Wo6B-JvrRS9pIT7aDTqG4ohEO7deEEgN2mju1T-uOR7PI_WDVWhJzWbrsCP8SVwoe-7VRPXeI-u78tqABegs7Uac8mTvQjF3OgDjSAB0gVY6T3j5hSmG66T2DaQvPd4nPtGMbj5ZRqinoR0LtEpOGZou9xT2sS8gbTz54/s1254/1000071160.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600" data-original-height="1254" data-original-width="1254" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjAtohuesk8mraAI4OysY5B4Wo6B-JvrRS9pIT7aDTqG4ohEO7deEEgN2mju1T-uOR7PI_WDVWhJzWbrsCP8SVwoe-7VRPXeI-u78tqABegs7Uac8mTvQjF3OgDjSAB0gVY6T3j5hSmG66T2DaQvPd4nPtGMbj5ZRqinoR0LtEpOGZou9xT2sS8gbTz54/s600/1000071160.png"/></a></div>
+  </a>
+
+  <a href="index.html" class="tbc-link">Home</a>
+
+  <a href="business.html" class="tbc-link">Businesses</a>
+
+</nav>
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: #050505;
-  color: #eac65b;
-  font-family: Arial, sans-serif;
-  min-height: 100vh;
-}
-
-header {
-  height: 85px;
-  padding: 0 6%;
+.tbc-menu {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background: linear-gradient(135deg, #111, #050505);
-  border-bottom: 1px solid #8f702a;
-  box-shadow: 0 4px 20px #d6a93620;
+  gap: 30px;
+  padding: 10px 20px;
+  background: #07152f;
 }
 
-.logo {
-  color: #f5d477;
-  font-family: Georgia, serif;
-  font-size: 25px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-decoration: none;
-}
-
-.logo small {
-  display: block;
-  font-size: 9px;
-  text-align: center;
-  letter-spacing: 5px;
-  margin-top: 3px;
-}
-
-nav {
-  display: flex;
-  gap: 28px;
-}
-
-nav a {
-  color: #eee;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 10px 0;
-  border-bottom: 2px solid transparent;
-}
-
-nav a:hover,
-nav a.active {
-  color: #f5d477;
-  border-bottom-color: #f5d477;
-}
-
-main {
-  min-height: calc(100vh - 145px);
+.tbc-logo {
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 25px;
-  text-align: center;
+  flex-shrink: 0;
 }
 
-.page {
+.tbc-logo img {
   width: 100%;
-  animation: appear .35s ease;
+  height: 100%;
+  object-fit: contain;
 }
 
-.crown {
-  font-size: 42px;
-  margin-bottom: 20px;
-  text-shadow: 0 0 20px #f5d47760;
+.tbc-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-h1 {
-  font-family: Georgia, serif;
-  font-size: clamp(32px, 7vw, 64px);
-  line-height: 1.25;
-  letter-spacing: 2px;
-  background: linear-gradient(#fff0a8, #eac65b, #a8781b);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.line {
-  height: 2px;
-  width: 160px;
-  margin: 25px auto;
-  background: linear-gradient(90deg, transparent, #eac65b, transparent);
-}
-
-.tagline {
-  color: #d8c17d;
-  font-size: 12px;
-  letter-spacing: 3px;
-  line-height: 2;
-}
-
-footer {
-  padding: 20px;
-  text-align: center;
-  border-top: 1px solid #8f702a40;
-  color: #8c805e;
-  font-size: 11px;
-  letter-spacing: 2px;
-}
-
-[hidden] {
-  display: none !important;
-}
-
-@keyframes appear {
-  from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@media(max-width:480px) {
-  header {
-    height: 75px;
-    padding: 0 5%;
-  }
-
-  .logo {
-    font-size: 20px;
-  }
-
-  nav {
-    gap: 18px;
-  }
-
-  nav a {
-    font-size: 14px;
-  }
-
-  .tagline {
-    font-size: 10px;
-    letter-spacing: 2px;
-  }
+.tbc-link:hover {
+  color: #d4af37;
 }
 </style>
-</head>
-
-<body>
-
-<header>
-  <a href="#home" class="logo">
-    ♛ TBC
-    <small>CLUB</small>
-  </a>
-
-  <nav>
-    <a href="#home" id="homeLink" class="active">Home</a>
-    <a href="#business" id="businessLink">Business</a>
-  </nav>
-</header>
-
-<main>
-  <section id="homePage" class="page">
-    <div class="crown">♛</div>
-    <h1>THREE<br>BILLIONAIRES<br>CLUB</h1>
-    <div class="line"></div>
-    <p class="tagline">
-      THREE FRIENDS. ONE VISION.<br>
-      BILLIONAIRE MINDSET.
-    </p>
-  </section>
-
-  <section id="businessPage" class="page" hidden>
-    <div class="crown">♛</div>
-    <h1>OUR BUSINESS</h1>
-    <div class="line"></div>
-    <p class="tagline">OUR JOURNEY STARTS HERE.</p>
-  </section>
-</main>
-
-<footer>THREE BILLIONAIRES CLUB</footer>
-
-<script>
-const homeLink = document.getElementById("homeLink");
-const businessLink = document.getElementById("businessLink");
-const homePage = document.getElementById("homePage");
-const businessPage = document.getElementById("businessPage");
-
-function showPage(page) {
-  const isHome = page === "home";
-
-  homePage.hidden = !isHome;
-  businessPage.hidden = isHome;
-
-  homeLink.classList.toggle("active", isHome);
-  businessLink.classList.toggle("active", !isHome);
-}
-
-homeLink.addEventListener("click", function(event) {
-  event.preventDefault();
-  history.pushState(null, "", "#home");
-  showPage("home");
-});
-
-businessLink.addEventListener("click", function(event) {
-  event.preventDefault();
-  history.pushState(null, "", "#business");
-  showPage("business");
-});
-
-window.addEventListener("popstate", function() {
-  showPage(location.hash === "#business" ? "business" : "home");
-});
-
-showPage(location.hash === "#business" ? "business" : "home");
-</script>
-
-</body>
-</html>
