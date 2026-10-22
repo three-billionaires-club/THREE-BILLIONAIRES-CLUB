@@ -1,49 +1,354 @@
 
-<nav class="tbc-menu">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THREE BILLIONAIRES CLUB | TBC</title>
 
-  <!-- Logo Image: Add your image here -->
-  <a href="index.html" class="tbc-logo">
-    <!-- <div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjAtohuesk8mraAI4OysY5B4Wo6B-JvrRS9pIT7aDTqG4ohEO7deEEgN2mju1T-uOR7PI_WDVWhJzWbrsCP8SVwoe-7VRPXeI-u78tqABegs7Uac8mTvQjF3OgDjSAB0gVY6T3j5hSmG66T2DaQvPd4nPtGMbj5ZRqinoR0LtEpOGZou9xT2sS8gbTz54/s1254/1000071160.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600" data-original-height="1254" data-original-width="1254" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjAtohuesk8mraAI4OysY5B4Wo6B-JvrRS9pIT7aDTqG4ohEO7deEEgN2mju1T-uOR7PI_WDVWhJzWbrsCP8SVwoe-7VRPXeI-u78tqABegs7Uac8mTvQjF3OgDjSAB0gVY6T3j5hSmG66T2DaQvPd4nPtGMbj5ZRqinoR0LtEpOGZou9xT2sS8gbTz54/s600/1000071160.png"/></a></div>
-  </a>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  <a href="index.html" class="tbc-link">Home</a>
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #14213d;
+      line-height: 1.7;
+    }
 
-  <a href="business.html" class="tbc-link">Businesses</a>
+    a {
+      text-decoration: none;
+    }
 
-</nav>
+    /* NAVIGATION MENU */
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 6%;
+      background: #07152f;
+      gap: 20px;
+    }
 
-<style>
-.tbc-menu {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  padding: 10px 20px;
-  background: #07152f;
-}
+    .logo {
+      width: 58px;
+      height: 58px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-.tbc-logo {
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
+    .logo img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
 
-.tbc-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
 
-.tbc-link {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-}
+    .menu a {
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: bold;
+    }
 
-.tbc-link:hover {
-  color: #d4af37;
-}
-</style>
+    .menu a:hover {
+      color: #d4af37;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      text-align: center;
+      padding: 45px 20px 35px;
+      background: #f4f6fa;
+    }
+
+    .hero-image {
+      width: 100%;
+      max-width: 1050px;
+      min-height: 180px;
+      max-height: 470px;
+      object-fit: cover;
+      border-radius: 10px;
+      display: block;
+      margin: 0 auto 28px;
+    }
+
+    .hero h1 {
+      font-size: clamp(27px, 4vw, 44px);
+      color: #07152f;
+      line-height: 1.25;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 17px;
+      color: #48546a;
+    }
+
+    /* CONTENT LINKS */
+    .quick-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 25px 20px 45px;
+      background: #f4f6fa;
+    }
+
+    .quick-links a {
+      color: #07152f;
+      border: 1px solid #d4af37;
+      padding: 10px 23px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .quick-links a:hover {
+      background: #07152f;
+      color: #ffffff;
+    }
+
+    /* VISION SECTION */
+    .vision {
+      padding: 65px 7%;
+      text-align: center;
+    }
+
+    .section-title {
+      color: #07152f;
+      font-size: clamp(25px, 3vw, 36px);
+      margin-bottom: 15px;
+    }
+
+    .section-text {
+      max-width: 780px;
+      margin: 0 auto 30px;
+      color: #596579;
+      font-size: 16px;
+    }
+
+    .vision-image {
+      display: block;
+      width: 100%;
+      max-width: 1050px;
+      max-height: 430px;
+      min-height: 150px;
+      object-fit: cover;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+
+    /* FOOTER */
+    .footer {
+      background: #07152f;
+      color: #ffffff;
+      padding: 30px 6%;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footer-logo {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: #ffffff;
+      font-size: 14px;
+    }
+
+    .footer-links a:hover {
+      color: #d4af37;
+    }
+
+    .copyright {
+      text-align: center;
+      border-top: 1px solid #31405a;
+      padding-top: 18px;
+      margin-top: 22px;
+      font-size: 13px;
+      color: #c5ccda;
+    }
+
+    /* MOBILE RESPONSIVE */
+    @media (max-width: 600px) {
+      .navbar {
+        padding: 10px 14px;
+        gap: 12px;
+      }
+
+      .logo {
+        width: 45px;
+        height: 45px;
+      }
+
+      .menu {
+        gap: 15px;
+      }
+
+      .menu a {
+        font-size: 13px;
+      }
+
+      .hero {
+        padding: 28px 15px;
+      }
+
+      .hero-image {
+        min-height: 130px;
+        max-height: 280px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .vision {
+        padding: 42px 18px;
+      }
+
+      .footer-inner {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .footer-links {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION MENU -->
+  <header class="navbar">
+
+    <!-- LOGO IMAGE: ADD YOUR LOGO HERE -->
+    <a href="index.html" class="logo">
+      <!-- INSERT LOGO IMAGE CODE HERE -->
+    </a>
+
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="business.html">Businesses</a>
+    </nav>
+
+  </header>
+
+  <!-- HOME PAGE MAIN IMAGE -->
+  <section class="hero">
+
+    <!-- INSERT THREE BILLIONAIRES CLUB IMAGE HERE -->
+    <img
+      src="images/hero.jpg"
+      alt="Three Billionaires Club"
+      class="hero-image">
+
+    <h1>THREE BILLIONAIRES CLUB</h1>
+
+    <p>
+      Building innovative businesses across digital platforms
+      and multiple industries.<br>
+      Creating valuable solutions and exploring global opportunities.
+    </p>
+
+  </section>
+
+  <!-- ABOUT AND WHY TBC LINKS -->
+  <section class="quick-links">
+    <a href="#about">About Us</a>
+    <a href="#why-tbc">Why TBC</a>
+  </section>
+
+  <!-- ABOUT US -->
+  <section class="vision" id="about">
+    <h2 class="section-title">About Us</h2>
+
+    <p class="section-text">
+      We build innovative businesses across digital platforms
+      and multiple industries.
+      Our focus is on creating valuable solutions, exploring
+      new opportunities, and building a strong global business ecosystem.
+    </p>
+  </section>
+
+  <!-- WHY TBC -->
+  <section class="vision" id="why-tbc">
+    <h2 class="section-title">Why TBC?</h2>
+
+    <p class="section-text">
+      We focus on innovation, smart business solutions,
+      and opportunities across multiple industries.
+      Our vision is to create lasting value and drive sustainable growth.
+    </p>
+  </section>
+
+  <!-- VISION & EXPANSION -->
+  <section class="vision" id="vision">
+    <h2 class="section-title">Our Vision &amp; Expansion</h2>
+
+    <p class="section-text">
+      Exploring new industries, developing digital solutions,
+      and expanding into new markets through innovation,
+      long-term thinking, and responsible business growth.
+    </p>
+
+    <!-- INSERT VISION / EXPANSION IMAGE HERE -->
+    <img
+      src="images/vision.jpg"
+      alt="TBC Vision and Expansion"
+      class="vision-image">
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-inner">
+
+      <!-- FOOTER LOGO IMAGE -->
+      <a href="index.html">
+        <!-- INSERT FOOTER LOGO IMAGE CODE HERE -->
+      </a>
+
+      <div class="footer-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      &copy; 2026 THREE BILLIONAIRES CLUB.
+      All Rights Reserved.
+    </div>
+
+  </footer>
+
+</body>
+</html>
